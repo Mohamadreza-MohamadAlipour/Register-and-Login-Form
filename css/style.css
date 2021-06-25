@@ -1,0 +1,457 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazir.eot") format("eot");
+  src: url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  direction: rtl;
+  font-family: vazir;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+#login {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backtwo.svg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login .login-right {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 0px 20px 20px 0;
+  -webkit-border-radius: 0px 20px 20px 0;
+  -moz-border-radius: 0px 20px 20px 0;
+  -ms-border-radius: 0px 20px 20px 0;
+  -o-border-radius: 0px 20px 20px 0;
+}
+
+@media (max-width: 576px) {
+  .login .login-right {
+    width: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  .login .login-right {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+}
+
+.login .login-right h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3bb397;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .login .login-right h1 {
+    font-size: 2rem;
+  }
+}
+
+.login .login-right p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #777;
+}
+
+.login .login-right form {
+  width: 100%;
+  text-align: center;
+}
+
+.login .login-right form .form-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.login .login-right form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cacaca;
+  padding: 10px;
+  margin-right: 0.5rem;
+  width: 50%;
+}
+
+.login .login-right form input::placeholder {
+  color: #cacaca;
+  font-family: vazir !important;
+}
+
+@media(max-width : 576px){
+.login .login-right form input::placeholder {
+  font-size: .7rem;
+}
+}
+
+.login .login-right form svg {
+  color: #cacaca;
+}
+
+.login .login-right button {
+  width: 25%;
+  padding: 10px;
+  font-family: vazir;
+  font-size: 1rem;
+  color: white;
+  background-color: #3bb397;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .login .login-right button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+.login .login-left {
+  width: 35%;
+  height: 100%;
+  background-image: url("../images/2.svg");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 20px 0px 0px 20px;
+  -webkit-border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 20px 0px 0px 20px;
+  -ms-border-radius: 20px 0px 0px 20px;
+  -o-border-radius: 20px 0px 0px 20px;
+}
+
+@media (max-width: 576px) {
+  .login .login-left {
+    width: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  .login .login-left {
+    display: none;
+  }
+}
+
+.login .login-left h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 576px) {
+  .login .login-left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.login .login-left p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  line-height: 1.6rem;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .login .login-left p {
+    font-size: 0.8rem;
+  }
+}
+
+.login .login-left button {
+  padding: 10px 20px;
+  font-family: vazir;
+  font-size: 0.9rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  outline: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .login .login-left button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.login .login-right .social-media {
+  margin-bottom: 2rem;
+}
+
+.login .login-right .social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login .login-right .social-media ul li a {
+  color: black;
+  margin: 0 0.8rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .login .login-right .social-media ul li a {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.login .login-right .social-media ul li:nth-child(1) a:hover {
+  color: white;
+  background-color: rgb(0, 153, 255);
+}
+
+.login .login-right .social-media ul li:nth-child(2) a:hover {
+  color: white;
+  background-color: rgb(255, 30, 0);
+}
+
+.login .login-right .social-media ul li:nth-child(3) a:hover {
+  color: white;
+  background-color: rgb(0, 89, 255);
+}
+
+.login .login-right .social-media ul li a svg {
+  font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+  .login .login-right .social-media ul li a svg {
+    font-size: 1.5rem;
+  }
+}
